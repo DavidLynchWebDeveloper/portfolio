@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 
 body {
   margin: 0;
@@ -38,18 +41,41 @@ h4 {
   font-size: 3rem;
 }
 
+h5 {
+  text-align: left;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
 .bigtitle {
   text-align: left;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-family: 'Satisfy' , sans-serif;
   margin-top: 10px;
   text-shadow: lightgray 20px 20px 2px;
 }
 
+.additional {
+  text-align: center;
+  font-size: 2.50rem;
+  color: darkgreen;
+  font-family: 'Satisfy' , sans-serif;
+  margin: 20px 0 20px 0;
+}
+
+.interests {
+  position: relative;
+  margin-left: 10px;
+  display: block;
+  max-width: 290px;
+}
+
 .container {
+  margin: 0;
   display: grid;
   margin-top: 5px;
-  width: 100%;
+  width: 100vh;
   background-color: white;
   border: 2px solid rgb(63, 133, 63);
   border-radius: 25px;
@@ -62,33 +88,13 @@ h4 {
 }
 
 .containerbox {
-  width: 370px;
+  max-width: 300px;
   text-align: left;
 }
 
 .main {
-  padding: 10px;
-  margin-left: 70px;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: fit-content;
-  margin: 0;
-}
-
-.hrline {
-  height:2px;
-  width: 97%;
-  margin: 0;
-  background-color: green;
-  margin: 2px 0 2px 0;
-}
-
-.interests {
-  margin: 10px 0 10px 0;
-  padding: 60px;
-  border: 1px solid red;
+  padding: 0px;
+  margin-left: 0px;
 }
 
 .item {
@@ -98,11 +104,29 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-
-.imgcenter {
-  width: 50%;
-  
+.img-fluid {
+  max-width: 250px;
+  height: fit-content;
+  margin: 0;
 }
+
+.hrline {
+  height:2px;
+  width: 97%;
+  margin-bottom: 10px;
+  background-color: green;
+  margin: 10px 0 10px 0;
+}
+
+
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 
